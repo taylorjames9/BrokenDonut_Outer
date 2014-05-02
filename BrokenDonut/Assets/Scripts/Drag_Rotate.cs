@@ -30,7 +30,7 @@ public class Drag_Rotate : MonoBehaviour {
 				// update the position by converting the current screen position of the finger to a world position on the Z = 0 plane
 								////////////dragObject.transform.position = GetWorldPos( gesture.Position );
 								//rotationRate = 3.0f;
-								dragObject.transform.Rotate (0, 0, gesture.DeltaMove.x, Space.Self);
+								dragObject.transform.Rotate (0, 0, gesture.DeltaMove.y, Space.Self);
 			}
 			else
 			{
