@@ -26,6 +26,24 @@ public class EnemyIndividualRecycle : MonoBehaviour {
 
 	void OnCollisionEnter(Collision otherCol){
 
-		this.transform.position = new Vector3(Random.Range(-15,15), Random.Range(-15,15), -1.5f);
+		SpawnParticles();
+		this.renderer.enabled = false;
+		StartCoroutine (Regenerate ());
+
 	}
+	void SpawnParticles()
+	{
+		ParticleEmitter emitter = this.GetComponentInChildren<ParticleEmitter>();
+		if( emitter )
+			emitter.Emit();
+	}
+
+	IEnumerator Regenerate(){
+		enemySpeed = Random.Range (1, 2);
+		yield return new WaitForSeconds (1.0f);
+		this.transform.position = new Vector3(Random.Range(-15,15), Random.Range(-15,15), -1.5f);
+		this.renderer.enabled = true;
+		yield return new WaitForSeconds (1.0f);
+	}
+
 }
