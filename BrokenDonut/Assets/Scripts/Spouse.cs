@@ -3,31 +3,37 @@ using System.Collections;
 
 public class Spouse : MonoBehaviour {
 
+
+	private bool randomImpulse;
+
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddForce (Random.Range(-5,5),Random.Range(-5,5), 0);
+		rigidbody.AddForce (Random.Range(-15,15),Random.Range(-15,15), 0);
 	}
 		
 
 	void OnCollisionEnter(Collision otherCol){
 
-		rigidbody.AddForce (Random.Range(-10,10),Random.Range(-10,10), 0);
+		rigidbody.AddForce (Random.Range(-200,200),Random.Range(-200,200), 0);
 
 	}
-	/*void OnCollisionStay(Collision otherCol){
-
-		rigidbody.AddForce (Random.Range(5,10),Random.Range(5,10), 0);
-
-	}*/
 
 	void FixedUpdate(){
-		StartCoroutine (RandomImpulse ());
-
+		if (!randomImpulse) {
+			StartCoroutine (RandomImpulse ());
+		}
 	}
 
 	IEnumerator RandomImpulse(){
+		randomImpulse = true;
+		yield return new WaitForSeconds (1.0f);
+		rigidbody.AddForce (Random.Range(-100,100),Random.Range(-100,100), 0);
+		yield return new WaitForSeconds (1.0f);
+		randomImpulse = false;
 
-		rigidbody.AddForce (Random.Range(-5,5),Random.Range(-5,5), 0);
-		yield return new WaitForSeconds (3.0f);
+	}
+	IEnumerator GateOpen(){
+		randomImpulse = true;
+		yield return new WaitForSeconds (1.0f);
 	}
 }
