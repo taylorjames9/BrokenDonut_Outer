@@ -27,7 +27,7 @@ public class Spouse : MonoBehaviour {
 	IEnumerator RandomImpulse(){
 		randomImpulse = true;
 		yield return new WaitForSeconds (1.0f);
-		rigidbody.AddForce (Random.Range(-100,100),Random.Range(-100,100), 0);
+		rigidbody.AddForce (Random.Range(-200,200),Random.Range(-200,200), 0);
 		yield return new WaitForSeconds (1.0f);
 		randomImpulse = false;
 
