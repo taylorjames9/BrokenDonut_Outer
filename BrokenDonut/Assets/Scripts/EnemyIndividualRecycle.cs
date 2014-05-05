@@ -9,7 +9,7 @@ public class EnemyIndividualRecycle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		enemySpeed = Random.Range (1, 2);
-		absoluteCenter = GameObject.Find("AbsoluteCenter");
+		absoluteCenter = GameObject.Find("Spouse");
 	}
 	
 	void Update () {

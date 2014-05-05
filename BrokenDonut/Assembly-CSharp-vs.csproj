@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Drag_Rotate.cs" />
      <Compile Include="Assets\Scripts\EnemyIndividualRecycle.cs" />
      <Compile Include="Assets\Scripts\EnemyRecycle.cs" />
+     <Compile Include="Assets\Scripts\Spouse.cs" />
      <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
