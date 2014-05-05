@@ -10,7 +10,6 @@ public class EnemyScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 				enemySpeed = Random.Range (1, 2);
-
 				absoluteCenter = GameObject.Find("AbsoluteCenter");
 	}
 	
@@ -18,7 +17,6 @@ public class EnemyScript : MonoBehaviour {
 	void Update () {
 
 				ChaseTheTarget ();
-
 	}
 
 		void ChaseTheTarget (){
@@ -28,8 +26,8 @@ public class EnemyScript : MonoBehaviour {
 				this.transform.position = Vector3.MoveTowards (current, targetPos, step);
 		}
 
-		void OnCollisionEnter(Collision otherCol){
+	void OnCollisionEnter(Collision otherCol){
 				EnemyManager.numEnemies--;
 				Destroy (gameObject);
-		}
+	}
 }

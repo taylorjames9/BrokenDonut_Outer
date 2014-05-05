@@ -3,8 +3,6 @@ using System.Collections;
 
 public class EnemyManager : MonoBehaviour {
 
-
-
 	public GameObject enemy1;
 		public static int numEnemies;
 
