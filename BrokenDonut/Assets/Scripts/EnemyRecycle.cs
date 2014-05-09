@@ -11,7 +11,6 @@ public class EnemyRecycle : MonoBehaviour {
 		for (int i = 0; i < numberOfEnemies; i++) {
 			Transform o = (Transform)Instantiate(enemyPrefab);
 			o.localPosition = new Vector3(Random.Range(-10,10), Random.Range(-10,10), -1.5f);
-
 		}
 	}
 	void Update () {
