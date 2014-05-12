@@ -48,8 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Drag_Rotate_Left_Sphere.cs" />
      <Compile Include="Assets\Scripts\Drag_Rotate_Right_Sphere.cs" />
+     <Compile Include="Assets\Scripts\EnemyBlueManager.cs" />
      <Compile Include="Assets\Scripts\EnemyIndividualRecycle.cs" />
-     <Compile Include="Assets\Scripts\EnemyRecycle.cs" />
+     <Compile Include="Assets\Scripts\EnemyPurpleManager.cs" />
+     <Compile Include="Assets\Scripts\EnemyRedManager.cs" />
      <Compile Include="Assets\Scripts\Pipe_Outer_Rotation.cs" />
      <Compile Include="Assets\Scripts\ResetScript.cs" />
      <Compile Include="Assets\Scripts\Spouse.cs" />
