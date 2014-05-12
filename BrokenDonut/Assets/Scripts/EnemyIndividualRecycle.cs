@@ -8,7 +8,7 @@ public class EnemyIndividualRecycle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		enemySpeed = Random.Range (1, 2);
+		enemySpeed = Random.Range (1, 3);
 		absoluteCenter = GameObject.Find("Spouse");
 	}
 	
@@ -39,7 +39,7 @@ public class EnemyIndividualRecycle : MonoBehaviour {
 	}
 
 	IEnumerator Regenerate(){
-		enemySpeed = Random.Range (1, 2);
+		enemySpeed = Random.Range (1, 3);
 		yield return new WaitForSeconds (1.0f);
 		this.transform.position = new Vector3(Random.Range(-15,15), Random.Range(-15,15), -1.5f);
 		this.renderer.enabled = true;

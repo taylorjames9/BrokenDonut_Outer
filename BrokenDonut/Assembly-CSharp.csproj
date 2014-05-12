@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\EnemyIndividualRecycle.cs" />
      <Compile Include="Assets\Scripts\EnemyPurpleManager.cs" />
      <Compile Include="Assets\Scripts\EnemyRedManager.cs" />
+     <Compile Include="Assets\Scripts\NewSpouseScript.cs" />
      <Compile Include="Assets\Scripts\Pipe_Outer_Rotation.cs" />
      <Compile Include="Assets\Scripts\ResetScript.cs" />
      <Compile Include="Assets\Scripts\Spouse.cs" />
