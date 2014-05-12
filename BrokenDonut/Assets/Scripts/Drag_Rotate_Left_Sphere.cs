@@ -36,7 +36,7 @@ public class Drag_Rotate_Left_Sphere : MonoBehaviour {
 
 				leftInnerRotation = new Vector3 (0, 0, gesture.DeltaMove.y);
 				Debug.Log ("leftInnterRotation Type == " + leftInnerRotation.GetType ().ToString ());
-								this.transform.Rotate (gesture.DeltaMove.y, gesture.DeltaMove.y, gesture.DeltaMove.y, Space.Self);
+								this.transform.Rotate (0, gesture.DeltaMove.y, 0, Space.Self);
 								myQuaternionRotation = this.transform.rotation;
 								myYRotation = this.transform.rotation.y;
 

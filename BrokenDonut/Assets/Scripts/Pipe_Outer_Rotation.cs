@@ -5,8 +5,6 @@ public class Pipe_Outer_Rotation : MonoBehaviour {
 		public Quaternion myRotation;
 		private float myEulerRotation;
 
-
-		// Update is called once per frame
 		void Update () {
 
 				myEulerRotation = Drag_Rotate_Right_Sphere.myYRotation;
