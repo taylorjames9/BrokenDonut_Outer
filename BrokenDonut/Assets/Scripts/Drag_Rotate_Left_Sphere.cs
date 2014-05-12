@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Drag_Rotate : MonoBehaviour {
+public class Drag_Rotate_Left_Sphere : MonoBehaviour {
 
-	public GameObject dragObject;
+	//public GameObject dragObject;
 		public float rotationRate;
 
+	public static Vector3 leftInnerRotation;
+		public static Quaternion myQuaternionRotation;
+		public static float myYRotation;
 
 	int dragFingerIndex = -1;
 
@@ -15,7 +18,7 @@ public class Drag_Rotate : MonoBehaviour {
 
 		if (gesture.Phase == ContinuousGesturePhase.Started) {
 			// dismiss this event if we're not interacting with our drag object
-			if (gesture.Selection != dragObject)
+			if (gesture.Selection != this.gameObject)
 				return;
 
 			dragFingerIndex = finger.Index;
@@ -28,9 +31,17 @@ public class Drag_Rotate : MonoBehaviour {
 			if( gesture.Phase == ContinuousGesturePhase.Updated )
 			{
 				// update the position by converting the current screen position of the finger to a world position on the Z = 0 plane
-								////////////dragObject.transform.position = GetWorldPos( gesture.Position );
+				////////this.transform.rotation = GetWorldPos( gesture.Position );
 								//rotationRate = 3.0f;
-								dragObject.transform.Rotate (0, 0, gesture.DeltaMove.y, Space.Self);
+
+				leftInnerRotation = new Vector3 (0, 0, gesture.DeltaMove.y);
+				Debug.Log ("leftInnterRotation Type == " + leftInnerRotation.GetType ().ToString ());
+								this.transform.Rotate (gesture.DeltaMove.y, gesture.DeltaMove.y, gesture.DeltaMove.y, Space.Self);
+								myQuaternionRotation = this.transform.rotation;
+								myYRotation = this.transform.rotation.y;
+
+				//dragObject.transform.rotation = GetWorldPos( gesture.Position );
+				print ("dragObject.transform.rotation =" +this.transform.rotation);
 			}
 			else
 			{

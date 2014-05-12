@@ -46,11 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Drag_Rotate.cs" />
+     <Compile Include="Assets\Scripts\Drag_Rotate_Left_Sphere.cs" />
+     <Compile Include="Assets\Scripts\Drag_Rotate_Right_Sphere.cs" />
      <Compile Include="Assets\Scripts\EnemyIndividualRecycle.cs" />
      <Compile Include="Assets\Scripts\EnemyRecycle.cs" />
+     <Compile Include="Assets\Scripts\Pipe_Outer_Rotation.cs" />
      <Compile Include="Assets\Scripts\ResetScript.cs" />
      <Compile Include="Assets\Scripts\Spouse.cs" />
+     <Compile Include="Assets\Scripts\pipe_Inner_Rotation.cs" />
      <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
