@@ -8,7 +8,9 @@ public class Drag_Rotate_Right_Sphere : MonoBehaviour {
 
 		public static Vector3 leftInnerRotation;
 		public static Quaternion myQuaternionRotation;
-		public static float myYRotation;
+	public static float myXRotation;
+	public static float myYRotation;
+	public static float myZRotation;
 
 		int dragFingerIndex = -1;
 
@@ -36,9 +38,11 @@ public class Drag_Rotate_Right_Sphere : MonoBehaviour {
 
 								leftInnerRotation = new Vector3 (0, 0, gesture.DeltaMove.y);
 								Debug.Log ("leftInnterRotation Type == " + leftInnerRotation.GetType ().ToString ());
-								this.transform.Rotate (0,gesture.DeltaMove.y, 0, Space.Self);
+								this.transform.Rotate (0,0, gesture.DeltaMove.y, Space.Self);
 								myQuaternionRotation = this.transform.rotation;
 								myYRotation = this.transform.rotation.y;
+								myXRotation = this.transform.rotation.x;
+								myZRotation = this.transform.rotation.z;
 
 								//dragObject.transform.rotation = GetWorldPos( gesture.Position );
 								print ("dragObject.transform.rotation =" +this.transform.rotation);
