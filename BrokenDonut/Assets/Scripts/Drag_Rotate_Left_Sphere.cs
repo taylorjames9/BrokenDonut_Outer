@@ -9,6 +9,7 @@ public class Drag_Rotate_Left_Sphere : MonoBehaviour {
 	public static Vector3 leftInnerRotation;
 		public static Quaternion myQuaternionRotation;
 		public static float myYRotation;
+	public	static float gestureYPosition;
 
 	int dragFingerIndex = -1;
 
@@ -31,17 +32,15 @@ public class Drag_Rotate_Left_Sphere : MonoBehaviour {
 			if( gesture.Phase == ContinuousGesturePhase.Updated )
 			{
 				// update the position by converting the current screen position of the finger to a world position on the Z = 0 plane
-				////////this.transform.rotation = GetWorldPos( gesture.Position );
-								//rotationRate = 3.0f;
 
-				leftInnerRotation = new Vector3 (0, 0, gesture.DeltaMove.y);
-				Debug.Log ("leftInnterRotation Type == " + leftInnerRotation.GetType ().ToString ());
-								this.transform.Rotate (0, gesture.DeltaMove.y, 0, Space.Self);
-								myQuaternionRotation = this.transform.rotation;
-								myYRotation = this.transform.rotation.y;
+				//Debug.Log ("leftInnterRotation Type == " + leftInnerRotation.GetType ().ToString ());
+				this.transform.Rotate (0, gesture.DeltaMove.y, 0, Space.Self);
 
-				//dragObject.transform.rotation = GetWorldPos( gesture.Position );
 				print ("dragObject.transform.rotation =" +this.transform.rotation);
+				print ("gesture.Position.y = " + gesture.Position.y);
+
+				gestureYPosition = (gesture.Position.y - 400);
+
 			}
 			else
 			{

@@ -12,7 +12,7 @@ public class EnemyIndividualRecycle : MonoBehaviour {
 		absoluteCenter = GameObject.Find("Spouse");
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 
 		ChaseTheTarget ();
 	}

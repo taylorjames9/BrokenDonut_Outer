@@ -1,0 +1,74 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity4.3.3.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'/Applications/Unity4.3.3.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-define:UNITY_IPHONE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_AUDIO_FMOD
+-define:ENABLE_MONO
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_GENERICS
+-define:ENABLE_SUBSTANCE
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:UNITY_IPHONE_API
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_GAMECENTER
+-define:UNITY_IOS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:UNITY_4_3_3
+-define:UNITY_4_3
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+'Assets/FingerGestures Samples/1) Finger Events/Scripts/FingerEventsSamplePart1.cs'
+'Assets/FingerGestures Samples/1) Finger Events/Scripts/FingerEventsSamplePart2.cs'
+'Assets/FingerGestures Samples/2) Gestures/Scripts/BasicGesturesSample.cs'
+'Assets/FingerGestures Samples/2) Gestures/Scripts/PinchTwistSample.cs'
+'Assets/FingerGestures Samples/2) Gestures/Scripts/PointCloudGestureRenderer.cs'
+'Assets/FingerGestures Samples/2) Gestures/Scripts/PointCloudGestureSample.cs'
+'Assets/FingerGestures Samples/3) Toolbox/Scripts/DragTrail.cs'
+'Assets/FingerGestures Samples/3) Toolbox/Scripts/EmitParticlesOnSwipe.cs'
+'Assets/FingerGestures Samples/3) Toolbox/Scripts/ToolboxDragSample.cs'
+'Assets/FingerGestures Samples/3) Toolbox/Scripts/ToolboxFingerEventsSample.cs'
+'Assets/FingerGestures Samples/3) Toolbox/Scripts/ToolboxOneFingerGestureSample.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/BasicSample.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/EmitParticles.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/MaxFPS.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/MenuNode.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/SampleBase.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/SampleUI.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/StartMenu.cs'
+'Assets/FingerGestures Samples/Assets/Scripts/SwipeParticlesEmitter.cs'
+'Assets/Scripts/BackToIntroScreen.cs'
+'Assets/Scripts/Drag_Rotate_Left_Sphere.cs'
+'Assets/Scripts/Drag_Rotate_Right_Sphere.cs'
+'Assets/Scripts/EnemyBlueManager.cs'
+'Assets/Scripts/EnemyIndividualRecycle.cs'
+'Assets/Scripts/EnemyPurpleManager.cs'
+'Assets/Scripts/EnemyRedManager.cs'
+'Assets/Scripts/NewSpouseScript.cs'
+'Assets/Scripts/Pipe_Outer_Rotation.cs'
+'Assets/Scripts/ResetScript.cs'
+'Assets/Scripts/Spouse.cs'
+'Assets/Scripts/StartLoad.cs'
+'Assets/Scripts/Swipe_Script.cs'
+'Assets/Scripts/pipe_Inner_Rotation.cs'
+-r:'/Applications/Unity4.3.3.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity4.3.3.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
